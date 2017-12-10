@@ -1,0 +1,26 @@
+{
+  "name": "promize",
+  "version": "0.0.1",
+  "description": "Just another implementation of well-known Promise",
+  "main": "index.js",
+  "author": "cz",
+  "license": "MIT",
+  "scripts": {
+    "test": "mocha",
+    "lint": "eslint src/promize.js",
+    "benchmark": "node ./benchmark/index"
+  },
+  "devDependencies": {
+    "eslint": "^4.10.0",
+    "eslint-config-prettier": "^2.7.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-prettier": "^2.3.1",
+    "mocha": "^4.0.1",
+    "prettier": "^1.8.2",
+    "promises-aplus-tests": "^2.1.2",
+    "webpack": "^3.8.1",
+    "yaku": "^0.18.5"
+  },
+  "dependencies": {}
+}
