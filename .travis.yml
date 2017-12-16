@@ -1,3 +1,4 @@
 language: node_js
 node_js:
   - stable
+after_script: "cat ./coverage/coverage.lcov | node_modules/.bin/coveralls"

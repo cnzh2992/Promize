@@ -1,6 +1,8 @@
 'use strict';
 
-const Promise = require('../src/promize');
+const Promise = process.env.JSCOV
+  ? require('../lib-cov/promize')
+  : require('../src/promize');
 
 module.exports = {
   deferred() {
@@ -10,5 +12,5 @@ module.exports = {
       return (defer.reject = reject);
     });
     return defer;
-  },
+  }
 };
