@@ -1,6 +1,4 @@
 language: node_js
 node_js:
   - stable
-before_script:
-  - _JAVA_OPTIONS=
-after_script: "cat ./coverage/coverage.lcov | node_modules/.bin/coveralls"
+after_script: "cat ./coverage/lcov.info | node_modules/.bin/coveralls"
